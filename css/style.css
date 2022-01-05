@@ -1,0 +1,85 @@
+:root {
+  --ff-primary: 'Montserrat', sans-serif;
+
+  --fw-reg: 400;
+  --fw-bold: 800;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-reg);
+  background: black;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.card {
+  background: #000000af;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1.temperature {
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+.description {
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+.search_btn:hover {
+  background: rgba(255, 255, 255, 0.452);
+}
+.search_btn {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 2.8em;
+  width: 2.8em;
+  outline: none;
+  background: rgba(255, 255, 255, 0.24);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.search_bar {
+  border: none;
+  outline: none;
+  padding: 0.6em 1em;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.534);
+  font-family: inherit;
+  font-size: 110%;
+  width: calc(100% - 75px);
+}
+.weather.result {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.result:after {
+  visibility: visible;
+  content: 'Leading...Please wait';
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
