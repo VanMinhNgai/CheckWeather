@@ -77,7 +77,7 @@ h1.temperature {
 }
 .weather.result:after {
   visibility: visible;
-  content: 'Leading...Please wait';
+  content: 'Loading...Please wait';
   color: white;
   position: absolute;
   top: 0;
