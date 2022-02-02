@@ -1,5 +1,5 @@
 let weather = {
-  apiKey: jobs.build.env.API_STUFF,
+  apiKey: {{secret.API_KEY}},
   fetchWeather: function (city) {
     fetch(
       'https://api.openweathermap.org/data/2.5/weather?q=' +
