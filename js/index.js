@@ -1,6 +1,6 @@
-const secret = process.env.API_STUFF;
+console.log(process.env.API_STUFF);
 let weather = {
-  apiKey: secret,
+  apiKey: process.env.API_STUFF,
   fetchWeather: function (city) {
     fetch(
       'https://api.openweathermap.org/data/2.5/weather?q=' +
