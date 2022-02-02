@@ -24,5 +24,4 @@ jobs:
         env:
           API_STUFF: ${{secrets.API_KEY}}
         run: |
-          env
           echo "API_TEsting: ${{env.API_STUFF}}"
