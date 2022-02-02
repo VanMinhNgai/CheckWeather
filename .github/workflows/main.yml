@@ -17,6 +17,8 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm test
+      - name: Run a one-line script
+        run: env
 
   publish-gpr:
     needs: build
