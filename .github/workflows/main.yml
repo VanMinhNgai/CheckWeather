@@ -22,3 +22,5 @@ jobs:
       #RUNs a single command for testing
       - name: Run a one-line script
         run: env
+        env:
+          -API_STUFF: ${{secrets.API_KEY}}
