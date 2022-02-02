@@ -23,4 +23,6 @@ jobs:
       - name: Run a one-line script
         env:
           API_STUFF: ${{secrets.API_KEY}}
-        run: env
+        run: |
+          env
+          echo "API_TEsting: ${{env.API_STUFF}}"
