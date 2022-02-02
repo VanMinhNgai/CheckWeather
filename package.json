@@ -1,0 +1,23 @@
+{
+  "name": "checkweather",
+  "version": "1.0.0",
+  "description": "Used HTML5/CSS, JavaScript, and OpenWeatherMap API to develop a weather application with a dynamic background based on any city being search by using Unsplash API\r <br>\r Check the website: https://vanminhngai.github.io/Check-Weather/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanMinhNgai/CheckWeather.git"
+  },
+  "author": "Minh Ngai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanMinhNgai/CheckWeather/issues"
+  },
+  "homepage": "https://github.com/VanMinhNgai/CheckWeather#readme",
+  "dependencies": {
+    "dotenv": "^15.0.0",
+    "request": "^2.88.2"
+  }
+}
