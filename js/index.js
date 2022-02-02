@@ -1,6 +1,5 @@
-const { secrect } = process.env;
 let weather = {
-  apiKey: secrect.API_STUFF,
+  apiKey: jobs.build.env.API_STUFF,
   fetchWeather: function (city) {
     fetch(
       'https://api.openweathermap.org/data/2.5/weather?q=' +
