@@ -1,6 +1,6 @@
-console.log(process.env.API_STUFF);
+const { secrect } = process.env;
 let weather = {
-  apiKey: process.env.API_STUFF,
+  apiKey: secrect.API_STUFF,
   fetchWeather: function (city) {
     fetch(
       'https://api.openweathermap.org/data/2.5/weather?q=' +
